@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container-fluid p-4">
+        <div class="row">
+            <div class="col">
+                <h1>battlefield of love</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="m-2 mb-5">
+        <p>instructions will appear here</p>
+    </section>
+
+    <section class="gameboards container-fluid">
+        <div class="row">
+            <div class="col-sm-6 border">
+                <div class="player container-fluid ">
+                    <ul class="row">
+                        <li class="col">1</li>
+                        <li class="col">2</li>
+                        <li class="col">3</li>
+                    </ul>
+                    <ul class="row">
+                        <li class="col">4</li>
+                        <li class="col">5</li>
+                        <li class="col">6</li>
+                    </ul>
+                    <ul class="row">
+                        <li class="col">7</li>
+                        <li class="col">8</li>
+                        <li class="col">9</li>
+                    </ul>
+                    <ul class="row">
+                        <li class="col">10</li>
+                        <li class="col">11</li>
+                        <li class="col">12</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-6 border">
+                <div class="opponent container-fluid">
+                    <ul class="row">
+                        <li class="col">1</li>
+                        <li class="col">2</li>
+                        <li class="col">3</li>
+                    </ul>
+                    <ul class="row">
+                        <li class="col">4</li>
+                        <li class="col">5</li>
+                        <li class="col">6</li>
+                    </ul>
+                    <ul class="row">
+                        <li class="col">7</li>
+                        <li class="col">8</li>
+                        <li class="col">9</li>
+                    </ul>
+                    <ul class="row">
+                        <li class="col">10</li>
+                        <li class="col">11</li>
+                        <li class="col">12</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid scoreboard fixed-bottom">
+        <div class="row">
+            <div class="col">
+                <table class="table-responsive-sm mb-2">
+                    <tr>
+                        <th>win:</th>
+                        <th class="pl-5">lose:</th>
+                    </tr>
+                    <tr>
+                        <td><div id="wins">0</div></td>
+                        <td class="pl-5"><div id="losses">0</div></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="btn btn-light">play</button>
+            <button class="btn btn-light">settings</button>
+        </div>
+    </div>
+    
+    <!-- Link to js -->
+    <script src="app.js"></script>
+</body>
+</html>
